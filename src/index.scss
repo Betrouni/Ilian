@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.main-img {
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+background-image: url("https://res.cloudinary.com/essenceo/image/upload/v1662878408/Ilian/Freya_Forest_Bruit_Logo_Typo_bu1lsi.jpg");
+background-size: cover;
+background-position-x: center;
+background-position-y: center;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.main-navbar-left {
+  height: 50px;
+  /* background-color: pink; */
+  font-size: 300%;  
+}
+
+.main-navbar-right {
+  height: 50px;
+  width: 500px;
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 150%;
+  div {
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.logo-insta{
+  transform: scale(1%);
+}
+
+.main-menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.menu-1{
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("https://res.cloudinary.com/essenceo/image/upload/v1662878408/Ilian/Freya_Forest_Bruit_Logo_Typo_bu1lsi.jpg");
+background-size: cover;
+background-position-x: center;
+background-position-y: center;
+
+  &:hover{
+    cursor: pointer;
+    .menu-footer{
+      animation: appearing 0.5s ease-in-out 0s 1 normal forwards;
+    }
+  }
+}
+
+
+
+
+.menu-footer{
+  height: 20%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  color:white;
+  text-align: center;
+  // visibility: hidden;
+  opacity: 0;
+  
+  p {
+    color: white;
+  font-size: 350%;
+  }
+  
+}
+// .menu-footer p {
+//   color: white;
+//   font-size: 350%;
+// }
+.menu-2{
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("https://res.cloudinary.com/essenceo/image/upload/v1662878400/Ilian/Fantasy_Elf_pencil_1_wvkaws.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  &:hover{
+    cursor: pointer;
+    .menu-footer{
+      animation: appearing 0.5s ease-in-out 0s 1 normal forwards;
+    }
+  }
+}
+.menu-3{
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("https://res.cloudinary.com/essenceo/image/upload/v1662878416/Ilian/Lilith_incrustation_1_xmrd28.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  &:hover{
+    cursor: pointer;
+    .menu-footer{
+      animation: appearing 0.5s ease-in-out 0s 1 normal forwards;
+    }
+  }
+}
+
+.gallery-navbar{
+  width: 100%;
+  height: 230px;
+  background-color: #222222;
+  color: white;
+  position: relative;
+  
+
+}
+
+.under-navbar{
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  margin: auto;
+  background-color: #141414;
+  font-size: 170%;
+  position: absolute;
+  bottom: 0px;
+
+}
+
+.under-navbar-text{
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+  div {
+    padding-bottom: 10px;
+    &:hover{
+      color: #A9A9AA;
+    }
+  }
+
+}
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  background-color: #474748;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-element{
+  height: 33.33%;
+  width: 20%;
+  background-image: url("https://res.cloudinary.com/essenceo/image/upload/v1662878416/Ilian/Lilith_incrustation_1_xmrd28.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  // background-color: darkgreen;
+
+}
+
+.footer{
+  width: 100%;
+  height: 10vh;
+  background-color: #141414;
+  color: white;
+  font-size: 200%;
+}
+
+.footer-text{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  div {
+    width: 33%;
+    text-align: center;
+    padding-top: 35px;
+  }
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
