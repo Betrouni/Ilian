@@ -33,6 +33,7 @@ background-position-y: center;
 }
 
 .main-navbar-left {
+  cursor: pointer;
   height: 50px;
   /* background-color: pink; */
   font-size: 300%;  
@@ -169,6 +170,96 @@ background-position-y: center;
       color: #A9A9AA;
     }
   }
+
+}
+
+.about-navbar{
+  color:#141414;
+  font-size: 80%;
+
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  font-size: 150%;
+
+
+  
+}
+
+.about-element {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 60%;
+}
+
+.about-photo {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+
+}
+
+.about-main-text{
+  padding-bottom: 80px
+}
+
+.about-section {
+  // background-color: purple;
+
+  justify-content:flex-start;
+  text-align: left;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  width: 50%;
+}
+
+.about-blackbg-element{
+  display: flex;
+  background: #222222;
+  color: white;
+  margin-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 10px;
+
+
+
+
+
+  div{
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+}
+.fa-regular{
+  margin-right: 15px;
+}
+
+.about-skills{
+  display: flex;
+}
+
+.about-single-element{
+  background-color: #222222;
+  color: white;
+  padding: 7px;
+  margin-right: 15px;
+}
+
+.trait{
+
+  width: 60%;
+  height: 1px;
+  background: black;
+  margin: auto;
 
 }
 
