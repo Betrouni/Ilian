@@ -264,7 +264,7 @@ background-position-y: center;
 }
 
 .gallery {
-  height: 100vh;
+
   width: 100%;
   background-color: #474748;
   display: flex;
@@ -280,6 +280,12 @@ background-position-y: center;
   background-position-y: center;
   // background-color: darkgreen;
 
+}
+
+.gallery-image{
+  height: 450px;
+  width: 20%;
+  object-fit: cover;
 }
 
 .footer{
@@ -299,6 +305,10 @@ background-position-y: center;
     text-align: center;
     padding-top: 35px;
   }
+}
+
+.pointOnClick{
+  cursor: pointer;
 }
 
 @keyframes appearing {

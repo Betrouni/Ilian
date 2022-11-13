@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from './images/PhotoRond.png'
 import Footer from './Footer'
 
 
@@ -18,7 +17,7 @@ function About(props) {
     </div>
   </div>
   <div className='about-container'>
-    <div className='about-element'> <img className='about-photo' src={photo} alt="selfie d'Ilian" /> </div>
+    <div className='about-element'> <img className='about-photo' src={process.env.PUBLIC_URL + '/images/Photo rond.png'} alt="selfie d'Ilian" /> </div>
     <div className='about-element' >Ilian Bounaceur</div>
     <div className='about-element'>Illustrateur/Graphiste</div>
     <div className='about-element'>ilian.bounaceur@gmail.com</div>
@@ -40,7 +39,6 @@ function About(props) {
  
     <div className='about-section ' >
         <h4>Contact</h4>
-        <p>intéréssé par</p>
         <div className='about-blackbg-element'>
         <div> ilian.bounaceur@gmail.com</div>
            
