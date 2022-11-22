@@ -1,20 +1,29 @@
 import React from 'react'
-import Footer from './Footer'
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 
-function About(props) {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
+
+function AboutComponent() {
   return (
     <div>
 
 
-    <div className='main-navbar about-navbar' >
-    <div className='main-navbar-left' onClick={()=>{props.onMain()}}>Ilian Bounaceur</div>
-    <div className='main-navbar-right' >
-      <div>À PROPOS</div>
-      <div>TRAVAUX</div>
-      <div> <i class="fa-brands fa-instagram"></i> </div>
-      <div>FR</div>
-    </div>
+<div className='main-navbar about-navbar' >
+    
+    <div className='main-navbar-left' ><StyledLink to="/">Ilian Bounaceur</StyledLink></div>
+    <div className="main-navbar-right">
+            <StyledLink to="/about">Ilian Bounaceur</StyledLink>
+            <StyledLink to="/portfolio/1">TRAVAUX</StyledLink>
+
+            <StyledLink to="https://www.instagram.com/ilian_art/?hl=fr"><i class="fa-brands fa-instagram"></i></StyledLink>
+            <div>FR</div>
+          </div>
   </div>
   <div className='about-container'>
     <div className='about-element'> <img className='about-photo' src={process.env.PUBLIC_URL + '/images/Photo rond.png'} alt="selfie d'Ilian" /> </div>
@@ -102,17 +111,13 @@ function About(props) {
     </div>
     
     
-    <div></div>
-    <div></div>
-    <div></div>
+    
   </div>
-  
-  <Footer />
-  
+    
   
   
   </div>
   )
 }
 
-export default About
+export default AboutComponent

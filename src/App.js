@@ -1,43 +1,30 @@
 import React from 'react';
-import { useState } from 'react';
-import Home from "./components/Home";
-import Gallery from './components/Gallery';
-import About from './components/About';
+import {Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Portfolio from './pages/Portoflio';
+import About from './pages/About';
+// import Error from './pages/Error';
+// import Header from './components/Header'
+// import Footer from './components/Footer';
+// import Test from './components/Test';
+
+
 // import 'app.scss'
 
 
 function App() {
-const [onMain, setOnMain] = useState(true)
-const [onGallery, setOnGallery] = useState(false)
-const [onAbout, setOnAbout] = useState(false)
-
-function toMain(){
-  setOnGallery(false);
-  setOnAbout(false);
-  setOnMain(true);
-}
-
-function toGallery(){
-  setOnAbout(false);
-  setOnMain(false);
-  setOnGallery(true);
-}
-
-function toAbout(){
-  setOnMain(false);
-  setOnGallery(false);
-  setOnAbout(true);
-}
-
-
-
 
   return (
     <div>
-    {onMain === true ? <Home onGallery={()=>{toGallery()} }  onAbout={()=>{toAbout()} } /> : onGallery === true ? <Gallery onAbout={()=>{toAbout()} } onMain={()=>{toMain()}} /> 
-    : onAbout === true ? <About onMain={()=>{toMain()}} onGallery={()=>{toGallery()} } /> : 
-    <Home onGallery={()=>{toGallery()} }  />  }
-    
+          
+            <Routes>
+                <Route path='/' element={<Home/>} />
+
+                <Route path='/about' element={<About/>} />
+
+                <Route path='/portfolio/:category' element={<Portfolio/>} />
+
+            </Routes> 
     </div>
    // <About /> 
   );
